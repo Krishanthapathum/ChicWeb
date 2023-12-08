@@ -28,5 +28,4 @@
   <div class="footer"></div>
   </div><!-- Container ends here-->
 </body>
-
 </html>
