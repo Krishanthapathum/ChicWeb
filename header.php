@@ -9,7 +9,7 @@
            include("categoryList.php");
                 ?>
 
-                <a href="admin.php">Admin</a>
+                <a href="index.php?page=admin">Admin</a>
             </p>
         </div><!--navigation ends-->
     </div><!-- Header ends here-->

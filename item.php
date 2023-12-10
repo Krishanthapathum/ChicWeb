@@ -18,8 +18,5 @@ if ($item_query = mysqli_query($dbconnect, $item_sql)) {
 
 <?php
 }
-            // "SELECT s.stockID, s.name, s.price, c.name AS catname 
-            //     FROM stock s JOIN category c
-            //     ON s.categoryID=c.categoryID 
-            //     WHERE s.stockID=" . $_GET['stockID'];
+            
 ?>
