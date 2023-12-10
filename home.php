@@ -1,2 +1,2 @@
 <h1> Welcome to chic clothing</h1>
-<p> We are a small family run business that has been selling clothes since 2003. We pride ourselves on our customer service and hope that you enjoy your shopping experience with us.</p>
+<p>This is the home page</p>

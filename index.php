@@ -15,7 +15,7 @@ include("dbconnect.php");
         <?php
         include("header.php");
         //check to see if user is visiting a page other than the home page
-        if (isset($_GET['page'])) {
+        if (!isset($_GET['page'])) {
         ?><div class="banner"><img src="images/banner.jpg" alt="chic clothes" /></div>
         <?php
         }
@@ -30,7 +30,7 @@ include("dbconnect.php");
                 include("$page.php");
             }
             ?>
-        </div>
+        </div>  
 
         <?php
         include("seccontent.php");
