@@ -1,6 +1,13 @@
 <?php
 session_start();
 
+//check if user is logged out
+if(isset($_GET['action'])){
+    if($_GET['action']=='logout'){
+        unset($_SESSION['admin']);
+    }
+}
+
 //if login form has been submitted, check if username and password match
 if(isset($_POST['login'])){
     
