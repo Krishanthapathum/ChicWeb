@@ -5,10 +5,16 @@ if (!isset($_SESSION['admin'])) {
     header("Location:index.php?page=admin");
 }
 
+//set session to blank if user has just entered this page from the admin panel
+if (!isset($_SESSION['addcategory']['name'])) {
+    $_SESSION['addcategory']['name'] = "";
+}
+
+
 ?>
 <h1>Add new category</h1>
 
-<form mrthod="post" action="index.php?page=entercategory /">
-    <p><input type="text" name="name" size="40" maxlength="50" /></p>
+<form method="post" action="index.php?page=confirmcategory ">
+    <p><input type="text" name="name" value="<?php echo $_SESSION['addcategory']['name']; ?>" size="40" maxlength="50" /></p>
     <p><input type="submit" name="submit" value="Add category" /></p>
 </form>
